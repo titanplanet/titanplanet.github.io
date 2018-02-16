@@ -1,0 +1,193 @@
+
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<title>Pluton</title>
+<link rel="icon" href="i.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+margin:0;
+padding:0;
+}
+
+
+h3{
+    margin: 0px;
+    font-family: Apple;
+    font-weight: bold;
+    font-size: 70px;
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+   }
+   h4{
+    margin: 0px;
+    font-family: Apple;
+    font-weight: bold;
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+   }
+.parallax { 
+   
+   background-image: url("pe.jpg");
+
+   
+   height:40%;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.parallas { 
+   
+   background-image: url("code.jpg");
+
+   
+   height:20%;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+@font-face {
+    font-family: Apple; 
+    src: url(9651.ttf); 
+   }
+   h1 {
+    font-family: Apple;
+    font-weight: bold;
+   }
+
+.lar{
+    background:url(i.png) no-repeat left center; 
+    background-size: 20px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 25px;
+
+
+}
+img{
+margin: 0px;
+padding: 0px;
+
+
+}    
+#u{
+    position: fixed;
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    top: -16px;
+}
+a{
+text-decoration:none;
+color:white;
+transition: 0.2s;
+}
+h1>a{
+    color: black;
+}
+
+
+   p{
+width: 50%;
+    font-family: Concert One;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    
+   }
+   h5{
+       margin: 0; 
+    font-family: Arial;
+    
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+   }
+</style>
+
+</head>
+             
+
+<body>
+<nav id="u">
+<center>
+<ul class="op">
+        
+<li><a href="index.html"class="lar">Titan</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="ind.html">Games</a></li>
+<li><a href="sup.html">Support</a></li>
+<li><a href="#">About Us</a></li>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA7Zx9JoY5q5rNnSoeyCvWD6diNMVBMjug",
+    authDomain: "pluto-39d83.firebaseapp.com",
+    databaseURL: "https://pluto-39d83.firebaseio.com",
+    projectId: "pluto-39d83",
+    storageBucket: "",
+    messagingSenderId: "145833631092"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</ul>
+</center>
+</nav> 
+
+<script>
+        var h_hght = -15; // высота шапки
+        var h_mrg = 0;    // отступ когда шапка уже не видна
+                         
+        $(function(){
+         
+            var elem = $('#u');
+            var top = $(this).scrollTop();
+             
+            if(top > h_hght){
+                elem.css('top', h_mrg);
+            }           
+             
+            $(window).scroll(function(){
+                top = $(this).scrollTop();
+                 
+                if (top+h_mrg < h_hght) {
+                    elem.css('top', (h_hght-top));
+                } else {
+                    elem.css('top', h_mrg);
+                }
+            });
+         
+        });
+        </script>
+<center>
+    <div class="parallax"></div>
+    <h1>...SOON...</h1>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+    <footer class="op">
+        <br>
+           <h5> © 2018 Pluton Inc. All Rights Reserved.</h5>
+           <br>
+    
+    </footer>
+    </center>   
+</body>

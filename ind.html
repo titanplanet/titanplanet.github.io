@@ -1,0 +1,199 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<title>Pluton</title>
+<link rel="icon" href="i.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+margin:0;
+padding:0;
+}
+
+
+@font-face {
+    font-family: Apple; 
+    src: url(9651.ttf); 
+   }
+   h1 {
+    font-family: Apple;
+    font-weight: bold;
+   }
+
+.parallax { 
+   
+    background-image: url("h.jpg");
+
+    
+    height:40%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallas { 
+   
+   background-image: url("bf.jpg");
+
+   
+   height:40%;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.lar{
+    background:url(i.png) no-repeat left center; 
+    background-size: 20px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 25px;
+
+
+}
+img{
+margin: 0px;
+padding: 0px;
+
+
+}    
+#u{
+    position: fixed;
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    top: -16px;
+}
+a{
+text-decoration:none;
+color:white;
+transition: 0.3s;
+}
+h1>a{
+    color: black;
+    
+}
+
+  
+   h6{
+       margin: 0; 
+    font-family: Apple;
+    font-size: 80px;
+    color:rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+   }
+   h5{
+       margin: 0; 
+    font-family: Arial;
+    
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+   }
+
+</style>
+
+</head>
+             
+
+<body>
+<nav id="u">
+<center>
+<ul class="op">
+        
+<li><a href="index.html"class="lar">Titan</a></li>
+<li><a href="pro.html">Projects</a></li>
+<li><a href="#">Games</a></li>
+<li><a href="sup.html">Support</a></li>
+<li><a href="about.html">About Us</a></li>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA7Zx9JoY5q5rNnSoeyCvWD6diNMVBMjug",
+    authDomain: "pluto-39d83.firebaseapp.com",
+    databaseURL: "https://pluto-39d83.firebaseio.com",
+    projectId: "pluto-39d83",
+    storageBucket: "",
+    messagingSenderId: "145833631092"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+</ul>
+</center>
+</nav> 
+
+<script>
+        var h_hght = -15; // высота шапки
+        var h_mrg = 0;    // отступ когда шапка уже не видна
+                         
+        $(function(){
+         
+            var elem = $('#u');
+            var top = $(this).scrollTop();
+             
+            if(top > h_hght){
+                elem.css('top', h_mrg);
+            }           
+             
+            $(window).scroll(function(){
+                top = $(this).scrollTop();
+                 
+                if (top+h_mrg < h_hght) {
+                    elem.css('top', (h_hght-top));
+                } else {
+                    elem.css('top', h_mrg);
+                }
+            });
+         
+        });
+        </script>
+        
+<center>
+      <br>
+      <br>
+      <br>
+    <h6>Games</h6>
+    <br>
+    <br>
+    <br>
+    <div class="parallax"></div>
+    <br>
+    <br>
+    <br>
+    <h1>Go&Jump</h1>
+<img src="https://lh3.googleusercontent.com/hRdma6WEVrjeFcvpjGAa2UjS5zR3bjJWVYC3dcV1eCiSLuNxJaGYwnHa_DHe0_gH68Y=h900-rw" width="250">    
+<p style="width: 50%">"Go&Jump" is a nice game to dispel boredom. It's a slasher in which the main character runs along the line. The main goal of the character is not to be shot down a box. You can also collect coins on the way. For them you can buy different new skins. Download and enjoy.</p>
+<h1 style="font-size: 40px;"><a href="https://play.google.com/store/apps/details?id=com.Pluton.Games&hl=ru" target="_bold">Download</a></h1>
+<br>
+<br>
+<br>
+<div class="parallas"></div>
+<br>
+<br>
+<h1>Spinner Simulator</h1>
+<img src="https://lh3.googleusercontent.com/JA5CvJoIy_a4pU3JYo_im6Q5osfJ9Uqj9J0_l9CUYu0F8vGLZmPm3lZCHOPJiw-Lr3M=h900-rw" width="250">    
+<p style="width: 50%">In this game you can swipe spinner and collect.</p>
+<h1 style="font-size: 40px;"><a href="https://play.google.com/store/apps/details?id=com.danylo.minko&hl=ru" target="_bold">Download</a></h1>
+
+</center>    
+<center>
+        <footer class="op">
+            <br>
+               <h5> © 2018 Pluton Inc. All Rights Reserved.</h5>
+               <br>
+        
+        </footer>
+        </center>   
+</body>

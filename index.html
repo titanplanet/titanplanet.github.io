@@ -1,0 +1,255 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<title>Pluton</title>
+<link rel="icon" href="i.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+margin:0;
+padding:0;
+}
+
+
+@font-face {
+    font-family: Apple; 
+    src: url(9651.ttf); 
+   }
+   h1 {
+    font-family: Apple;
+    font-weight: bold;
+   }
+
+.lar{
+    background:url(i.png) no-repeat left center; 
+    background-size: 20px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 25px;
+
+
+}
+
+.parallax { 
+   
+    background-image: url("j.jpg");
+
+    
+    height:65%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallas { 
+   
+   background-image: url("l.jpg");
+
+   
+   height: 150px; 
+   width: 100%;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+img{
+margin: 0px;
+padding: 0px;
+
+
+}    
+#u{
+    position: fixed;
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    top: -16px;
+}
+li>a{
+text-decoration:none;
+color:white;
+transition: 0.3s;
+}
+
+.image {
+	position: relative;
+	
+}
+
+h2 {
+    font-family: Concert One;
+    color:white;
+	position: absolute;
+	top	: 200px;
+	left: 0;
+	
+}
+p{
+
+font-family: Apple;
+font-weight: bold;
+font-size: 30px;
+color:rgb(0, 0, 0);
+-webkit-font-smoothing: antialiased;
+width: 40%;
+}
+   h3{
+    margin: 0px;
+    font-family: Apple;
+    font-weight: bold;
+    font-size: 70px;
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+   }
+   h4{
+    margin: 0px;
+    font-family: Apple;
+    font-weight: bold;
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+   }
+   h5{
+
+    margin: 0px;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+   }
+
+</style>
+
+</head>
+             
+
+<body>
+<nav id="u">
+<center>
+<ul class="op">
+        
+<li><a href="#"class="lar">Titan</a></li>
+<li><a href="pro.html">Projects</a></li>
+<li><a href="ind.html">Games</a></li>
+<li><a href="sup.html">Support</a></li>
+<li><a href="about.html">About Us</a></li>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA7Zx9JoY5q5rNnSoeyCvWD6diNMVBMjug",
+    authDomain: "pluto-39d83.firebaseapp.com",
+    databaseURL: "https://pluto-39d83.firebaseio.com",
+    projectId: "pluto-39d83",
+    storageBucket: "",
+    messagingSenderId: "145833631092"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+</ul>
+</center>
+</nav> 
+
+<script>
+        var h_hght = -15; 
+        var h_mrg = 0;    
+                         
+        $(function(){
+         
+            var elem = $('#u');
+            var top = $(this).scrollTop();
+             
+            if(top > h_hght){
+                elem.css('top', h_mrg);
+            }           
+             
+            $(window).scroll(function(){
+                top = $(this).scrollTop();
+                 
+                if (top+h_mrg < h_hght) {
+                    elem.css('top', (h_hght-top));
+                } else {
+                    elem.css('top', h_mrg);
+                }
+            });
+         
+        });
+        </script>
+<center>
+        <div class="parallax"></div>
+
+   
+<img src="pl.png" width="40%">
+<hr style="width:70%">
+
+<p>Мы – это команда дизайнеров и програмистов, которые хотять сделать крутой проэкт Хотим пригласить вас к нам в команду.</p>
+
+
+
+
+
+
+<div id="login">
+  
+    <br>
+    <br>
+    <h3>Join Us</h3>
+    <br>
+    <br>
+    <h4>Send you email to us and we will write you</h4>
+    <br>
+    <br>
+    
+<form method="POST">
+
+<input type="email" id="user_login" class="login"  placeholder="EMAIL ADDRESS" value="" name="epal" required >
+<input type="submit" value="Send" class="login">
+</form>
+
+
+</div>
+</center> 
+<br>
+<br>
+<div class="parallas"></div>
+
+<center>
+<footer class="op">
+    <br>
+       <h5> © 2018 Pluton Inc. All Rights Reserved.</h5>
+       <br>
+
+</footer>
+</center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
